@@ -48,20 +48,7 @@ This project analyzes a dataset containing coffee sales from a vending machine. 
      - matplotlib
      - seaborn
      - datetime
-     - 
-2. **Running the Analysis**:
-     - Clone the repository:
-       ```bash
-       git clone https://github.com/ilmafz/cof_sales_analysis.git
-       ```
-     - Navigate to the project Directory:
-       ```bash
-       cd cof_sales_analysis
-       ```
-     - Install the necessary packages:
-       ```bash
-       pip install -r requirements.txt
-       ```
+  
   
 # Project Files
 - `cof_sales.csv`: Raw dataset with coffee sales records.
