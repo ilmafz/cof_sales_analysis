@@ -1,63 +1,114 @@
-# cof_sales_analysis
+# ☕ Coffee Sales Analysis
 
-# Project Overview
-This project analyzes a dataset containing coffee sales from a vending machine. The dataset includes sales data recorded over several months, with details on each sale such as date, time, payment type, amount spent, and coffee product. The goal of this analysis is to gain insights into customer behavior and identify trends in coffee sales over time.
+A comprehensive exploratory analysis of coffee vending machine transactions aimed at identifying product performance, sales patterns, and time-based demand behaviour. The objective is to convert raw operational data into insights that can support decision-making in product planning, inventory management, and customer engagement strategies.
 
-# Dataset Description
-**Rows** : 1133 entries
-**Columns** : 
-  - `date`: Sale date
-  - `datetime`: Sale timestamp
-  - `cash_type`: Payment method
-  - `card`: Card ID
-  - `money`: Amount Spent
-  - `coffee_name`: Type of Coffee purchased
+---
 
-# Objective
-1. **Data Cleaning**:
-   - Handle missing values.
-   - Convert date and time columns to datetime format.
-   - Check for duplicates.
-   - 
-3. **Exploratory Data Analysis (EDA)**:
-   - Generate insights on sales patterns by time, day, and product type.
-   - 
-5. **Sales Trends Analysis**:
-   - Hourly, daily, and monthly sales trends.
-   - Weekly sales distribution.
-   - Popularity of different coffee products.
-   - 
-6. **Visualization**:
-   - Use visualizations to illustrate trends, such as sales by hour, product popularity, and   
-     sales over time.
+## 📌 Project Overview
 
-# Key Findings
-- **Hourly Sales Distribution**: Shows sales trends by hour to identify peak times.
-- **Daily Sales Line Plot**: Illustrates total sales over days.
-- **Weekly Sales Bar Plot**: Sales trends for each day of the week.
-- **Monthly Sales Bar Plot**: Total sales by month to spot seasonality.
-- **Hourly Sales Bar Plot For Each Coffee**: Identifies peak sales times for different coffee types.
-- **Product Popularity Chart**: Coffee preferences among customers.
+This project presents a structured analysis of transactional coffee sales data.  
+The study focuses on:
 
-# Usage
-1. **Prerequisites**:
-   -Python: Version 3.11.5
-   -Required Libararies:
-     - pnadas
-     - numpy
-     - matplotlib
-     - seaborn
-     - datetime
-  
-  
-# Project Files
-- `cof_sales.csv`: Raw dataset with coffee sales records.
-- `project cof_sales.ipynb`: Jupyter Notebook containing data cleaning, EDA, and visualizations.
-- `README.md`: Project overview and documentation.
+- Understanding **which products drive the highest sales**
+- Identifying **peak demand hours** and **busy days**
+- Evaluating **monthly performance trends**
+- Examining **payment behaviour**
+- Comparing **product-wise hourly demand profiles**
 
-# Acknowledgments
-This project was developed by [Ilma Fatma Zaidi](https://github.com/ilmafz), as a personal project to explore sales trends and develop data analysis skills.
+The notebook demonstrates strong analytical workflow practices, including data cleaning, feature engineering, trend evaluation, and visualisation.
 
-  
-     
+---
+
+## 📂 Dataset Summary
+
+The dataset contains detailed operational records:
+
+- `date` — Date of each transaction  
+- `datetime` — Exact timestamp  
+- `coffee_name` — Product purchased  
+- `money` — Amount paid  
+- `cash_type` / `card` — Payment channel information  
+
+From these variables, additional time-based attributes were engineered:
+
+- `hour`  
+- `day`  
+- `month`  
+- `year`
+
+These attributes enable more granular insights into behavioural patterns.
+
+---
+
+## 🧹 Data Processing & Preparation
+
+The preprocessing pipeline includes:
+
+- Handling missing values in the `card` column by imputing `"cash"`  
+- Converting `date` and `datetime` into appropriate datetime formats  
+- Extracting `hour`, `day`, `month`, and `year` for temporal analysis  
+- Standardising fields and validating data consistency  
+- Ensuring a clean and analysis-ready structure with Pandas operations  
+
+This structured approach ensures that insights derived from the data are reliable and actionable.
+
+---
+
+## 📊 Key Analytical Findings
+
+### ⭐ Product Performance
+- **Americano with Milk** emerges as the strongest performer, indicating consistent customer preference.
+
+### ⏰ Time-Based Demand
+- Sales peak during **morning hours (8 AM – 11 AM)**, reflecting typical consumption behaviour.
+- Different coffee types exhibit unique hourly demand curves.
+
+### 📅 Monthly Trends
+- **May** records the highest monthly sales volume.
+- Seasonal patterns suggest potential opportunities for targeted promotions.
+
+### 💳 Payment Insights
+- After resolving missing entries, cash payments constitute the majority of transactions.
+
+---
+
+## 📈 Visual Exploration
+
+The analysis includes a comprehensive set of visualisations:
+
+- Daily revenue trend  
+- Month-over-month comparison  
+- Hourly sales distribution  
+- Multi-subplot view of hourly demand segmented by product  
+- Product popularity ranking  
+
+All visual outputs were developed using Matplotlib and structured for interpretability.
+
+---
+
+## 🛠 Tools & Technologies
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Jupyter Notebook**
+
+---
+
+## 🎯 Conclusion
+
+This analysis converts raw transactional data into clear, actionable insights on customer behaviour and product performance.  
+The findings can assist business stakeholders in:
+
+- Optimizing product availability  
+- Planning inventory more strategically  
+- Adjusting offerings based on peak demand hours  
+- Enhancing promotional decisions  
+
+The project demonstrates analytical rigor, clean data processing, and effective insight communication — key competencies for data and business analytics roles.
+
+---
+
+## 🗂 Project Structure
 
