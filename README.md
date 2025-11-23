@@ -109,6 +109,3 @@ The findings can assist business stakeholders in:
 The project demonstrates analytical rigor, clean data processing, and effective insight communication — key competencies for data and business analytics roles.
 
 ---
-
-## 🗂 Project Structure
-
